@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+  <reporter-output>
+    <line>
+      <![CDATA[get connection with databse]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-12-22T13:37:14 IST" name="Default suite" finished-at="2025-12-22T13:37:14 IST" duration-ms="136">
+    <groups>
+    </groups>
+    <test started-at="2025-12-22T13:37:14 IST" name="Default test" finished-at="2025-12-22T13:37:14 IST" duration-ms="136">
+      <class name="Organization_Module.Organization_scenarios_Test">
+        <test-method is-config="true" signature="coonectToDatabase()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="coonectToDatabase" finished-at="2025-12-22T13:37:14 IST" duration-ms="189" status="FAIL">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
+at BaseClassUtility.BaseClass.coonectToDatabase(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:589)
+at java.base/sun.nio.ch.Net.connect(Net.java:578)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:751)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+            <line>
+              <![CDATA[get connection with databse]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- coonectToDatabase -->
+        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="configParallelExe" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configParallelExe -->
+        <test-method is-config="true" signature="launchThebrowser(java.lang.String)[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="launchThebrowser" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchThebrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="login" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateOrgWithPhoneNum()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="CreateOrgWithPhoneNum" finished-at="2025-12-22T13:37:14 IST" duration-ms="1" status="SKIP">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
+at BaseClassUtility.BaseClass.coonectToDatabase(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:589)
+at java.base/sun.nio.ch.Net.connect(Net.java:578)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:751)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrgWithPhoneNum -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="logout" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="login" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Createorg()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="Createorg" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
+at BaseClassUtility.BaseClass.coonectToDatabase(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:589)
+at java.base/sun.nio.ch.Net.connect(Net.java:578)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:751)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createorg -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="logout" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="login" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createorgwithind()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="createorgwithind" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <exception class="com.mysql.cj.jdbc.exceptions.CommunicationsException">
+            <message>
+              <![CDATA[Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
+at BaseClassUtility.BaseClass.coonectToDatabase(BaseClass.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805)
+... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:589)
+at java.base/sun.nio.ch.Net.connect(Net.java:578)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:751)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mysql.cj.jdbc.exceptions.CommunicationsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createorgwithind -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="logout" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitTheBrowser()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="quitTheBrowser" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTheBrowser -->
+        <test-method is-config="true" signature="closeParallelExe()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="closeParallelExe" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeParallelExe -->
+        <test-method is-config="true" signature="disconnecTheDatabase()[pri:0, instance:Organization_Module.Organization_scenarios_Test@3b0090a4]" started-at="2025-12-22T13:37:14 IST" name="disconnecTheDatabase" finished-at="2025-12-22T13:37:14 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnecTheDatabase -->
+      </class> <!-- Organization_Module.Organization_scenarios_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
