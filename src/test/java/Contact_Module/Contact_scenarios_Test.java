@@ -24,6 +24,7 @@ import POMUtilities.HomePomPage;
 import POMUtilities.LoginPOMPage;
 
 //changes for git
+//chnages to reflect in eclipse
 
 @Listeners(GenericUtilities.ListernersUtility.class)
 public class Contact_scenarios_Test extends BaseClass {
