@@ -23,6 +23,8 @@ import POMUtilities.CreateContactPomPage;
 import POMUtilities.HomePomPage;
 import POMUtilities.LoginPOMPage;
 
+//changes for git
+
 @Listeners(GenericUtilities.ListernersUtility.class)
 public class Contact_scenarios_Test extends BaseClass {
 	@Test(retryAnalyzer = GenericUtilities.RetryAnalyzerUtility.class)
